@@ -124,8 +124,12 @@ export default function Footer() {
                             CÔNG TY TNHH CÔNG NGHỆ PHARMACY VIỆT NAM
                         </h4>
                         <p className='pb-[10px] text-xs'>
-                            <strong>Địa chỉ Hà Nội:</strong>
+                            <strong>Văn Phòng 1</strong>
                             &nbsp;&nbsp;Tòa nhà N09B2 Đường Thành Thái, Phường Dịch Vọng, Quận Cầu Giấy, TP Hà Nội
+                        </p>
+                        <p className='pb-[10px] text-xs'>
+                            <strong>Văn Phòng 2</strong>
+                            &nbsp;&nbsp;Tầng 6 số 263 đường Cầu Giấy, P. Dịch Vọng, Q. Cầu Giấy, Hà Nội
                         </p>
                         <p className='pb-[10px] text-xs'>
                             <strong>Điện thoại</strong>
