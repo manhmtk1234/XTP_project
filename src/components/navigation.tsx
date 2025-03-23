@@ -58,7 +58,7 @@ export default function Navigation() {
                                             <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                         </svg>
                                     </Link>
-                                    <ul className={`${style.subMenu} absolute !left-[216px] !top-[-10px] !w-[225px] !hidden group-hover:!block`} >
+                                    <ul className={`${style.subMenu} sub-list-menu absolute !left-[216px] !top-[-10px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
                                             <Link className='text-white !text-left' href={'/product/ai-in-management/security-monitoring'}>  Giám sát ngân hàng GD tiền mặt</Link>
                                         </li>

@@ -29,3 +29,10 @@ body {
 .bannerHeader {
   border-bottom: solid 1px rgb(211, 203, 203);
 }
+
+@media screen and (max-width: 1000px) {
+  .sub-list-menu {
+    left: 0px !important;
+    top: 7.5vh;
+  }
+}

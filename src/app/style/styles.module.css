@@ -1418,15 +1418,15 @@ main .whyBox .firstLine .content {
 
     .menuMain {
         position: absolute;
-        width: 70%;
-        margin-left: 35%;
+        width: 100%;
+        /* margin-left: 35%; */
         background: rgba(0, 93, 178, 1);
         top: 15vh;
-        left: -5%;
+        /* left: -5%; */
         display: none;
         z-index: 1000;
     }
-
+    
     .slider .niadSlider img {
         height: 295px;
     }
