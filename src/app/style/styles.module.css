@@ -1422,11 +1422,11 @@ main .whyBox .firstLine .content {
         /* margin-left: 35%; */
         background: rgba(0, 93, 178, 1);
         top: 15vh;
-        /* left: -5%; */
+        left: 0%;
         display: none;
         z-index: 1000;
     }
-    
+
     .slider .niadSlider img {
         height: 295px;
     }

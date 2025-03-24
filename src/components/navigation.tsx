@@ -58,7 +58,7 @@ export default function Navigation() {
                                             <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                         </svg>
                                     </Link>
-                                    <ul className={`${style.subMenu} sub-list-menu absolute !left-[216px] !top-[-10px] !w-[225px] !hidden group-hover:!block`} >
+                                    <ul className={`${style.subMenu} sub-list-menu sub-left absolute !left-[216px] !top-[-10px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
                                             <Link className='text-white !text-left' href={'/product/ai-in-management/security-monitoring'}>  Giám sát ngân hàng GD tiền mặt</Link>
                                         </li>
@@ -81,7 +81,7 @@ export default function Navigation() {
                                         </svg>
                                     </Link>
 
-                                    <ul className={`${style.subMenu} absolute !left-[216px] !top-[-10px] !w-[225px] !hidden group-hover:!block`} >
+                                    <ul className={`${style.subMenu} sub-left absolute !left-[216px] !top-[-10px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
                                             <Link className='text-white !text-left' href={'/product/hospital/device-management'}> Vật tư y tế, thiết bị </Link>
                                         </li>
@@ -97,7 +97,7 @@ export default function Navigation() {
                                             <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                         </svg>
                                     </Link>
-                                    <ul className={`${style.subMenu} absolute !left-[216px] !top-[-10px] !w-[225px] !hidden group-hover:!block`} >
+                                    <ul className={`${style.subMenu} sub-left absolute !left-[216px] !top-[-10px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
                                             <Link className='text-white !text-left' href={'/product/patient-care/chat-ai'}>Tư vấn bệnh nhân</Link>
                                         </li>
@@ -113,7 +113,7 @@ export default function Navigation() {
                                             <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                         </svg>
                                     </Link>
-                                    <ul className={`${style.subMenu} absolute !left-[216px] !top-[-11px] !w-[225px] !hidden group-hover:!block`} >
+                                    <ul className={`${style.subMenu} sub-mobile sub-left absolute !left-[216px] !top-[-11px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
                                             <Link className='text-white !text-left' href={'/product/self-service-kios/payment-kiosk'}>Quản lý thanh toán không tiền mặt bệnh viện </Link>
                                         </li>
@@ -126,7 +126,7 @@ export default function Navigation() {
                                     <Link className='text-white justify-between !text-left' href={'/product/big-data/security-CSDL'}>Big data <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                     </svg></Link>
-                                    <ul className={`${style.subMenu} absolute !left-[216px] !top-[-11px] !w-[225px] !hidden group-hover:!block`} >
+                                    <ul className={`${style.subMenu} sub-left absolute !left-[216px] !top-[-11px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
                                             <Link className='text-white !text-left' href={'/product/big-data/security-CSDL'}> Bảo mật an toàn TT cơ sở dữ liệu </Link>
                                         </li>

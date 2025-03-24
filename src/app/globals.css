@@ -31,8 +31,15 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-  .sub-list-menu {
+  .sub-left {
     left: 0px !important;
+  }
+
+  .sub-list-menu {
     top: 7.5vh;
+  }
+
+  .sub-mobile {
+    top: 8vh;
   }
 }

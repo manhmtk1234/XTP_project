@@ -1,4 +1,4 @@
-import Link from "next/link";
+ import Link from "next/link";
 import style from "@/app/style/styles.module.css";
 
 export default function NotFound() {
