@@ -4,7 +4,8 @@ import emailjs from "@emailjs/browser";
 import style from "@/app/style/styles.module.css";
 import Navigation from '@/components/navigation';
 import Footer from "@/components/Footer";
-import BannerSlider from '@/components/BannerSlider';
+import RecruitmentBanner from "@/components/RecruitmentBanner"
+import HexagonImage from "@/components/HexagonImage";
 import Link from "next/link";
 
 export default function recruitment() {
@@ -39,6 +40,13 @@ export default function recruitment() {
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
+    const RoundImage = ({ src, alt, className = "" }: { src: string; alt?: string; className?: string }) => (
+    <img src={src} alt={alt} className={`rounded-full border-4 border-[#1553ad] object-cover ${className}`} />
+    );
+
+    const SquareImage = ({ src, alt, className = "" }: { src: string; alt?: string; className?: string }) => (
+        <img src={src} alt={alt} className={`rounded-lg object-cover ${className}`} />
+    );
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -99,7 +107,149 @@ export default function recruitment() {
                 </div>
             </div>
             <Navigation />
-            <BannerSlider />
+            <RecruitmentBanner />
+
+            {/* --- BẮT ĐẦU PHẦN GIỚI THIỆU HITECH --- */}
+            <section className="w-full flex flex-col items-center mt-8">
+                <h1 className="text-[64px] font-bold text-[#1553ad] text-center leading-tight bg-[#b3d2f1] px-8 py-2 rounded-md mb-6 w-fit mx-auto">
+                    Hitech - Kết Nối Tri Thức & Công Nghệ
+                </h1>
+                <hr className="w-[96%] h-[6px] bg-gray-100 border-0 my-6" />
+                <div className="flex flex-row w-full justify-center items-start gap-8 mt-4">
+                    <img
+                        src="/hitechlogo.png"
+                        alt="Hitech Vietnam"
+                        className="w-[350px] h-auto object-contain"
+                        style={{ minWidth: 220 }}
+                    />
+                    <div className="max-w-[900px] text-[28px] leading-[1.4] text-black text-justify">
+                        Hitech không chỉ là một tổ chức công nghệ mà còn là cầu nối tri thức, nơi chuyển giao công nghệ tiên tiến và nuôi dưỡng thế hệ nhân tài tương lai. Chúng tôi cam kết mang đến những giải pháp đổi mới, giúp cá nhân và doanh nghiệp nắm bắt cơ hội trong kỷ nguyên số, tối ưu hiệu suất làm việc và phát triển bền vững. Với sứ mệnh thúc đẩy sáng tạo và kết nối công nghệ với thực tiễn, Hitech luôn đồng hành cùng doanh nghiệp, tổ chức và cá nhân trên hành trình ứng dụng công nghệ vào cuộc sống và công việc, tạo ra những giá trị thiết thực và bền vững.
+                    </div>
+                </div>
+            </section>
+            {/* --- KẾT THÚC PHẦN GIỚI THIỆU HITECH --- */}
+
+            <section
+                className="flex flex-wrap justify-center items-center gap-y-0"
+                style={{ marginTop: 100 }}
+            >
+                <HexagonImage src="/home-slider-images06.jpg" alt="Sự kiện 1" />
+                <HexagonImage src="/home-slider-images10.jpg" alt="Sự kiện 2" className="!-mt-52" />
+                <HexagonImage src="/structure.jpg" alt="Sự kiện 3" />
+                <HexagonImage src="/home-slider-images08.jpg" alt="Sự kiện 4" className="!-mt-52" />
+                <HexagonImage src="/home-slider-images02.jpg" alt="Sự kiện 5" />
+            </section>
+
+            {/* --- MỤC TIÊU CỦA CHÚNG TÔI --- */}
+            <section className="w-full flex flex-col items-center mt-16 mb-8">
+                <div className="flex items-center justify-center mb-8">
+                    <h2 className="text-[64px] font-bold text-[#1553ad] text-center leading-tight uppercase mr-4">
+                        Mục tiêu của chúng tôi
+                    </h2>
+                    <img src="/chart.png" alt="Chart" className="w-20 h-20 object-contain" />
+                </div>
+                <div className="w-[98%] bg-[#f7f7f7] rounded-lg flex flex-row justify-center items-stretch gap-8 py-10 px-4">
+                    {/* Chuyển giao công nghệ */}
+                    <div className="flex-1 flex flex-col items-center text-center px-4">
+                        <img src="/icon-technology.png" alt="" className="w-16 h-16 mb-2" />
+                        <h3 className="text-2xl font-semibold mb-2">Chuyển giao công nghệ</h3>
+                        <p className="text-lg text-gray-800">
+                            Đưa những giải pháp hiện đại vào thực tiễn, giúp doanh nghiệp và cá nhân ứng dụng hiệu quả. Công nghệ vào cuộc sống.
+                        </p>
+                    </div>
+                    {/* Phát triển nhân tài */}
+                    <div className="flex-1 flex flex-col items-center text-center px-4">
+                        <img src="/icon-talent.png" alt="" className="w-16 h-16 mb-2" />
+                        <h3 className="text-2xl font-semibold mb-2">Phát triển nhân tài</h3>
+                        <p className="text-lg text-gray-800">
+                            Đào tạo và bồi dưỡng nguồn nhân lực chất lượng cao, trang bị kiến thức và kỹ năng cần thiết để dẫn đầu trong thời đại số.
+                        </p>
+                    </div>
+                    {/* Thúc đẩy đổi mới sáng tạo */}
+                    <div className="flex-1 flex flex-col items-center text-center px-4">
+                        <img src="/icon-innovation.png" alt="" className="w-16 h-16 mb-2" />
+                        <h3 className="text-2xl font-semibold mb-2">Thúc đẩy đổi mới sáng tạo</h3>
+                        <p className="text-lg text-gray-800">
+                            Xây dựng môi trường khuyến khích tư duy sáng tạo, đổi mới trong lĩnh vực công nghệ.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section className="w-full flex flex-col items-center mt-16 mb-8">
+                <h2 className="text-[40px] md:text-[48px] font-bold text-[#1553ad] text-center mb-2">
+                    Hình ảnh của sinh viên đang thực hành dự án
+                </h2>
+                <div className="flex flex-row justify-center items-end gap-12 mt-4 mb-2">
+                    <div className="flex flex-col items-center">
+                        <RoundImage
+                            src="/student-project-4.jpg"
+                            alt="Sinh viên thực hành 1"
+                            className="w-[240px] h-[240px] border-[6px] border-[#1553ad] shadow-lg"
+                        />
+                    </div>
+                    <div className="flex flex-col items-center relative">
+                        <RoundImage
+                            src="/student-project-5.jpg"
+                            alt="Sinh viên thực hành 2"
+                            className="w-[260px] h-[260px] border-[8px] border-[#1553ad] shadow-lg"
+                        />
+                        <span className="absolute -top-12 left-1/2 -translate-x-1/2 text-[80px] text-[#1553ad] font-bold select-none leading-none">↓</span>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <RoundImage
+                            src="/student-project-6.jpg"
+                            alt="Sinh viên thực hành 3"
+                            className="w-[240px] h-[240px] border-[6px] border-[#1553ad] shadow-lg"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section className="w-full flex flex-col items-center mt-16 mb-8">
+                <h2 className="text-[40px] md:text-[48px] font-bold text-[#1553ad] text-center mb-6">
+                    Hình ảnh của sinh viên đang thực hành dự án
+                </h2>
+                <div className="flex flex-col md:flex-row w-full max-w-[1200px] mx-auto gap-8">
+                    {/* Ảnh bên trái */}
+                    <div className="flex flex-col gap-6 flex-shrink-0 items-center md:items-start w-full md:w-[340px]">
+                        <SquareImage src="/student-project-4.jpg" alt="Sinh viên thực hành 1" className="w-[260px] h-[160px] rounded-xl object-cover shadow" />
+                        <SquareImage src="/student-project-5.jpg" alt="Sinh viên thực hành 2" className="w-[260px] h-[160px] rounded-xl object-cover shadow" />
+                        <SquareImage src="/student-project-6.jpg" alt="Sinh viên thực hành 3" className="w-[260px] h-[160px] rounded-xl object-cover shadow" />
+                    </div>
+                    {/* Thông tin bên phải */}
+                    <div className="flex-1 flex flex-col justify-start">
+                        <div className="flex items-center mb-2">
+                            <svg width="36" height="36" fill="#1553ad" className="mr-2" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm0 18.75A8.75 8.75 0 1 1 20.75 12 8.76 8.76 0 0 1 12 20.75ZM12 7.25a.75.75 0 0 1 .75.75v3.19l2.72 1.57a.75.75 0 1 1-.75 1.3l-3-1.75A.75.75 0 0 1 11.25 12V8A.75.75 0 0 1 12 7.25Z"/></svg>
+                            <span className="text-[#1553ad] font-bold text-[22px]">
+                                Sinh viên thực hành dự án công nghệ thông tin
+                            </span>
+                        </div>
+                        <p className="text-[18px] text-black mb-4">
+                            Trong quá trình học tập, sinh viên ngành Công nghệ Thông tin được trực tiếp tham gia vào các dự án thực tế nhằm rèn luyện kỹ năng chuyên môn, phát triển tư duy sáng tạo và giải quyết vấn đề.
+                        </p>
+                        <h3 className="text-[#1553ad] font-bold text-[20px] mb-2 mt-2">
+                            Thông qua các dự án này, sinh viên có cơ hội:
+                        </h3>
+                        <ul className="list-disc pl-6 text-[17px] text-black mb-4">
+                            <li>Áp dụng kiến thức đã học như lập trình, cơ sở dữ liệu, trí tuệ nhân tạo, phát triển web/app… vào bài toán thực tế.</li>
+                            <li>Làm việc theo nhóm như một mô hình doanh nghiệp thu nhỏ: phân chia vai trò, quản lý tiến độ và báo cáo kết quả.</li>
+                            <li>Tiếp cận công nghệ mới như điện toán đám mây, IoT, blockchain, DevOps…</li>
+                            <li>Tương tác với doanh nghiệp, nhận phản hồi từ chuyên gia và khách hàng thật.</li>
+                        </ul>
+                        <h3 className="text-[#1553ad] font-bold text-[20px] mb-2 mt-2">
+                            Các dự án có thể bao gồm:
+                        </h3>
+                        <ul className="list-disc pl-6 text-[17px] text-black mb-4">
+                            <li>Xây dựng ứng dụng quản lý học tập.</li>
+                            <li>Thiết kế hệ thống đặt lịch thông minh cho doanh nghiệp.</li>
+                            <li>Phát triển chatbot hỗ trợ tư vấn khách hàng.</li>
+                            <li>Ứng dụng AI trong xử lý ảnh hoặc phân tích dữ liệu.</li>
+                        </ul>
+                        <p className="text-[17px] text-black">
+                            Việc thực hành dự án không chỉ giúp sinh viên tự tin hơn khi bước vào môi trường làm việc thực tế mà còn là bước đệm để các bạn trở thành những kỹ sư công nghệ năng động, sáng tạo và thích nghi tốt với xu hướng phát triển của thời đại số.
+                        </p>
+                    </div>
+                </div>
+            </section>
             <section className={`py-[3.125rem]`}>
                 <div className='w-full px-4 mx-auto'>
                     <div className='flex items-center justify-center flex-col flex-grow'>
